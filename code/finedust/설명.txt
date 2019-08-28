@@ -1,0 +1,15 @@
+1. 파이썬 파일
+기상_노원구_최종
+기상_종로구_최종
+기상_전체_최종
+
+2. 피클 파일
+1) 동별 365 평균
+nowon_365.pickle
+jongro_365.pickle
+
+2) 구별 365 평균
+nowon_mean.pickle
+jongro_mean.pickle
+
+
