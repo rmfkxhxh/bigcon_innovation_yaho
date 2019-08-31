@@ -58,9 +58,10 @@ final_jongro = pd.read_pickle( path + 'jongro_365.pickle')
 stations_nowon = list(set(final_jongro.serial.values))
 stations_jong = list(set(final_jongro.serial.values))
 #%%
+path = '../data/local_data/pkls/dustpkl/'
 jong_totalmean = pd.read_pickle( path + 'jongro_mean.pickle')
 nowon_totalmean = pd.read_pickle( path + 'nowon_mean.pickle')
-finedust_mean = pd.read_pickle( path + 'finedust_mean.pickle')
+# finedust_mean = pd.read_pickle( path + 'finedust_mean.pickle')
 jong_totalmean['GU_CD'] = '종로구'
 nowon_totalmean['GU_CD'] = '노원구'
 gu_totalmean = pd.concat([jong_totalmean, nowon_totalmean])
@@ -77,17 +78,18 @@ gu_totalmean.loc[gu_totalmean['pm25']< 16.0 , 'pm25_class'] = 0
 gu_totalmean.loc[(gu_totalmean['pm25']< 36.0) & (gu_totalmean['pm25'] >= 16.0), 'pm25_class'] = 1
 gu_totalmean.loc[(gu_totalmean['pm25']< 76.0) & (gu_totalmean['pm25'] >= 36.0) , 'pm25_class'] = 2
 gu_totalmean.loc[gu_totalmean['pm25']>= 76.0 , 'pm25_class'] = 3
-#%%
+
+#pm_class
 gu_totalmean.loc[gu_totalmean['pm10_class']< gu_totalmean['pm25_class'] , 'pm_class'] = gu_totalmean['pm25_class']
 gu_totalmean.loc[gu_totalmean['pm10_class']< gu_totalmean['pm25_class'] , 'pm_class_info'] ='pm25'
 
 gu_totalmean.loc[gu_totalmean['pm10_class']>= gu_totalmean['pm25_class'] , 'pm_class'] = gu_totalmean['pm10_class']
 gu_totalmean.loc[gu_totalmean['pm10_class']>= gu_totalmean['pm25_class'] , 'pm_class_info'] ='pm10'
 
-#
-gu_totalmean['pm10_class'] = gu_totalmean['pm10_class'].astype('int')
-gu_totalmean['pm25_class'] = gu_totalmean['pm25_class'].astype('int')
-gu_totalmean['pm_class'] = gu_totalmean['pm_class'].astype('int')
+#type 변경
+gu_totalmean['pm10_class'] = gu_totalmean['pm10_class'].astype('category')
+gu_totalmean['pm25_class'] = gu_totalmean['pm25_class'].astype('category')
+gu_totalmean['pm_class'] = gu_totalmean['pm_class'].astype('category')
 
 
 # 위코드는 기상전체최종으로 옮기기
@@ -116,6 +118,8 @@ datadongdust = pd.merge(left=datadongdust, right=final_dust, how='left', on=['ST
 # datagudust.isnull().sum()
 # datadongdust.isnull().sum()
 # datadongdust.loc[datadongdust['serial'].isna()]
+# 카드data에만 있는 행정동 삭제 (기상데이터가 없는 행정동)
+datadongdust = datadongdust.dropna()
 
 #%% [markdown]
 # ### 유동인구 데이터
@@ -146,8 +150,11 @@ sex_age_move['STD_YMD'] = pd.to_datetime(sex_age_move['STD_YMD'], format='%Y%m%d
 sex_age_move = sex_age_move.set_index('STD_YMD')
 
 
-
-
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
 #%%
 temp_m = temp_m.reset_index()
 temp_w = temp_w.reset_index()
