@@ -156,9 +156,23 @@ sex_age_move = sex_age_move.set_index('STD_YMD')
 # ---------------여기부터------------------------
 # ---------------여기부터------------------------
 #%%
-temp_m = temp_m.reset_index()
-temp_w = temp_w.reset_index()
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_00', 'AGE'] = 0
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_10', 'AGE'] = 10
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_20', 'AGE'] = 20
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_30', 'AGE'] = 30
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_40', 'AGE'] = 40
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_50', 'AGE'] = 50
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_60', 'AGE'] = 60
+sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_70U', 'AGE'] = 70
 
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_00', 'AGE'] = 0
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_10', 'AGE'] = 10
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_20', 'AGE'] = 20
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_30', 'AGE'] = 30
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_40', 'AGE'] = 40
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_50', 'AGE'] = 50
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_60', 'AGE'] = 60
+sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_70U', 'AGE'] = 70
 
 #%%
 temp_m = temp_m.set_index('STD_YMD')
