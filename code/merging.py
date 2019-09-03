@@ -146,15 +146,10 @@ del sex_age_move['HDONG_CD']
 # sex_age_move.head()
 sex_age_move = pd.DataFrame({'sex_age_fp':sex_age_move.reset_index().groupby(['STD_YMD', 'HDONG_NM']).sum().stack()})
 sex_age_move = sex_age_move.reset_index()
-sex_age_move['STD_YMD'] = pd.to_datetime(sex_age_move['STD_YMD'], format='%Y%m%d', errors='ignore')
+sex_ages_move['STD_YMD'] = pd.to_datetime(sex_age_move['STD_YMD'], format='%Y%m%d', errors='ignore')
 sex_age_move = sex_age_move.set_index('STD_YMD')
 
 
-# ---------------여기부터------------------------
-# ---------------여기부터------------------------
-# ---------------여기부터------------------------
-# ---------------여기부터------------------------
-# ---------------여기부터------------------------
 #%%
 sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_00', 'AGE'] = 0
 sex_age_move.loc[sex_age_move.level_2 == 'MAN_FLOW_POP_CNT_10', 'AGE'] = 10
@@ -174,6 +169,11 @@ sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_50', 'AGE'] = 50
 sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_60', 'AGE'] = 60
 sex_age_move.loc[sex_age_move.level_2 == 'WMAN_FLOW_POP_CNT_70U', 'AGE'] = 70
 
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
+# ---------------여기부터------------------------
 #%%
 temp_m = temp_m.set_index('STD_YMD')
 
