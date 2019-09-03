@@ -8,7 +8,8 @@ code만 git에 올려주시면 됩니다.
 
 
 temp_finaldata.ipynb-카드메출데이터로 계층적 클러스터링 함 label활용은 아직 못함
-
+card_clustering.py 위와 같음
+카드kmeans.ipynb-카드매출로 kmeans 클러스터링 
 예시)
 card_spending code: 
 Untitled.ipynb - 전체 데이터들 모아놓은 연습 코드
