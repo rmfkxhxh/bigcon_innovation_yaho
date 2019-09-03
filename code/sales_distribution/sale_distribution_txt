@@ -1,0 +1,6 @@
+유통 데이터 pickle
+
+.~유통 전처리 DATA.ipynb : cat_cost.pickle   ( category별 실제 금액화 전처리 final )
+https://drive.google.com/drive/u/1/folders/1wE80Bk0tC2P2QYfc5Ri7OmSz-GTcw4qa
+
+                          -사용 csv : GS_Retail_cat.csv  /   GS_Retail_RP.csv   /   gu_dong.csv
