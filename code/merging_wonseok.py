@@ -14,7 +14,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns    
-%matplotlib inline  
+%matplotlib inline
 from matplotlib import font_manager, rc
 font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()
 rc('font', family=font_name)
@@ -116,8 +116,8 @@ result_move = result_move.rename(columns = {'SUM': 'MOVE','S-W':'MOVE-WORKER'})
 # result_move.to_pickle('final.pickle')
 
 #%%
-
-
+ 
+ 
 plt.figure(figsize=(15,15))
 sns.heatmap(data = result_move[result_move.date.isin(holiday_df)].corr(method = 'pearson'), annot=True, 
 fmt = '.2f', linewidths=.5, cmap='RdBu')
