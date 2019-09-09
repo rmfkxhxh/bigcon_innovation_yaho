@@ -1,4 +1,14 @@
 # Team Yaho
+# 개요
+* [공모 배경](#공모-배경)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
+
 
 # 미세먼지 취약계층(60,70대) 인식개선 및 복지 서비스 제안 
 미세먼지 민감 집군인 고연령층의 미세먼지 인식개선을 위한 교육과  
