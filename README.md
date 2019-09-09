@@ -1,11 +1,11 @@
 # Team Yaho
 # 개요
 * [공모 배경](#공모-배경)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
+* [활용 데이터 정의](#활용-데이터-정의)
+* [데이터 처리 방안 및 활용 분석 기법](#데이터-처리-방안-및-활용-분석-기법)
+* [분석 결과](#분석-결과)
+* [기존 사업 방안](#기존-사업-방안)
+* [개선 사업 방안 및 기대 효과](#개선-사업-방안-및-기대-효과)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
