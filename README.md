@@ -1,5 +1,5 @@
 # Team Yaho  
- 
+---
   
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
@@ -12,12 +12,15 @@
 ! text in orange
 # text in gray
 ```
-## 주제 : 미세먼지 취약계층(60,70대) 인식개선 및 복지 서비스 제안 
+---
+  
+# 주제 : 미세먼지 취약계층(60,70대) 인식개선 및 복지 서비스 제안 
 미세먼지 민감 집군인 고연령층의 미세먼지 인식개선을 위한 교육과  
 실질적으로 외출을 자제 할 수 있도록 복지 차원의 장보기 서비스 제안을 위한  
 데이터 분석과정 설명  
+---  
   
-# 개요
+## 개요
 * [공모 배경](#공모-배경)
 * [활용 데이터 정의](#활용-데이터-정의)
 * [데이터 처리 방안 및 활용 분석 기법](#데이터-처리-방안-및-활용-분석-기법)
@@ -25,7 +28,8 @@
 * [기존 사업 방안](#기존-사업-방안)
 * [개선 사업 방안 및 기대 효과](#개선-사업-방안-및-기대-효과)
 * [기타](#기타)
-
+---
+  
 ## 공모 배경
 - ‘미세먼지 문제에 대해 알고 있다’로 응답한 비율 약 90%
 
@@ -39,6 +43,8 @@
   
 **미세먼지에 대한 위험 인식 개선을 위해 자치단치별 방문 교육이나 미세먼지 신호등을 도입, 시행중이지만   
 더 효과적으로 시행할 수 있는 방법을 데이터 분석을 통하여 제안하려 한다.**  
+---
+  
   
   
 ## 활용 데이터 정의
@@ -84,56 +90,32 @@ Give the example
 ```
 Give the example
 ```
+---
+  
   
   
 ## 분석 결과
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
+---
+  
 ## 기존 사업 방안
 Explain what these tests test and why
 
 ```
 Give an example
 ```
-
+---
+  
 ## 개선 사업 방안 및 기대 효과
 
 Add additional notes about how to deploy this on a live system
-
+---
+  
 ## 기타
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+---
+  
