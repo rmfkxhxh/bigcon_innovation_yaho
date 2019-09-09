@@ -1,6 +1,9 @@
 # Team Yaho  
 
   
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
   
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
@@ -134,10 +137,8 @@ Add additional notes about how to deploy this on a live system
 
 ---
   
-## 기타
+## 기타  
+사용안되는 분석이나 코드 정리
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 ---
   
